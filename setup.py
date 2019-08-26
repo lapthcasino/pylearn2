@@ -79,9 +79,9 @@ setup(
     long_description=open('./pylearn2/README.rst', 'rb').read().decode('utf8'),
     dependency_links=['git+http://github.com/Theano/Theano.git#egg=Theano'],
     install_requires=['numpy>=1.5', 'pyyaml', 'argparse', "Theano"],
-    scripts=['bin/pylearn2-plot-monitor', 'bin/pylearn2-print-monitor',
-             'bin/pylearn2-show-examples', 'bin/pylearn2-show-weights',
-             'bin/pylearn2-train'],
+    scripts=['./pylearn2/bin/pylearn2-plot-monitor', './pylearn2/bin/pylearn2-print-monitor',
+             './pylearn2/bin/pylearn2-show-examples', './pylearn2/bin/pylearn2-show-weights',
+             './pylearn2/bin/pylearn2-train'],
     package_data={
         '': ['*.cu', '*.cuh', '*.h'],
     },
