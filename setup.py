@@ -25,10 +25,10 @@ except ImportError:
 if cython_available:
     cmdclass = {'build_ext': build_ext}
     ext_modules = [Extension("pylearn2.utils._window_flip",
-                             ["pylearn2/utils/_window_flip.pyx"],
+                             ["./pylearn2/pylearn2/utils/_window_flip.pyx"],
                              include_dirs=[numpy.get_include()]),
                    Extension("pylearn2.utils._video",
-                             ["pylearn2/utils/_video.pyx"],
+                             ["./pylearn2/pylearn2/utils/_video.pyx"],
                              include_dirs=[numpy.get_include()])]
 else:
     cmdclass = {}
